@@ -1,5 +1,5 @@
 @import "api";
 
-@mixin rtl-sass-text-align($value) {
-  @include rtl-sass-declaration-value(text-align, $value);
+@mixin text-align($value) {
+  @include declaration-value(text-align, $value);
 }

@@ -1,16 +1,16 @@
 @import "api";
 
 // margin
-@mixin rtl-sass-margin-left($value) {
-  @include rtl-sass-declaration(margin-left, $value, null);
-  @include rtl-sass-declaration(margin-right, null, $value);
+@mixin margin-left($value) {
+  @include declaration(margin-left, $value, null);
+  @include declaration(margin-right, null, $value);
 }
 
-@mixin rtl-sass-margin-right($value) {
-  @include rtl-sass-declaration(margin-right, $value, null);
-  @include rtl-sass-declaration(margin-left, null, $value);
+@mixin margin-right($value) {
+  @include declaration(margin-right, $value, null);
+  @include declaration(margin-left, null, $value);
 }
 
-@mixin rtl-sass-margin($top, $right: null, $bottom: null, $left: null) {
-  @include rtl-sass-declaration-1-to-4(margin, $top, $right, $bottom, $left);
+@mixin margin($top, $right: null, $bottom: null, $left: null) {
+  @include declaration-1-to-4(margin, $top, $right, $bottom, $left);
 }
