@@ -31,15 +31,19 @@
   }
 
   @if ($leftToRightValue != null) {
-    [dir="ltr"] & {
-      #{$property}: $leftToRightValue;
-    }
+      @if $dir == ltr {
+        & {
+          #{$property}: $leftToRightValue;
+        }
+      }
   }
 
   @if ($rightToLeftValue != null) {
-    [dir="rtl"] & {
-      #{$property}: $rightToLeftValue;
-    }
+      @if $dir == rtl {
+        & {
+          #{$property}: $rightToLeftValue;
+        }
+      }
   }
 }
 
